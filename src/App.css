@@ -1,0 +1,11 @@
+
+.wrapper{
+	position: fixed;
+	top: 100px;
+	left: 40%;
+}
+.btn {
+	padding: 8px 12px;
+	border-radius: 3px;
+	margin: 0 10px;
+}
