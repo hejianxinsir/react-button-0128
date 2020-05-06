@@ -1,22 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
-import Button from './Button';
 
-class App extends React.Component {
-	constructor(){
-		super()
-		this.state = {
-		
-		}
+class App extends Component {
+
+	add1(){
+		this.props.onAdd1()
 	}
 
 	render(){
 		return (
 			<div className="wrapper">
-				<Button value="点我呀" />
-				<Button value="快点我!" />
-				<Button value="舒服了" />
+				<div>你点击了{this.props.store}次</div>
+				<button onClick={()=>this.add1()}>+1</button>
 			</div>
 		)
 	}
